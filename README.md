@@ -8,7 +8,7 @@ In particular we adopt the benchmark introduced by Kotseruba et al. where the ob
 After these steps, we’re left with the following dataset:
 Train: 		2315 No Crossing	           765 Crossing
 Validation: 	252 No Crossing		52 Crossing
-Test: 		690 No Crossing                   252 Crossing
+Test: 		690 No Crossing                   252 Crossing.
 It can be seen that the data  is quite imbalanced.
 # Models
 To study the effect of different types of input:
