@@ -11,9 +11,9 @@ Validation: 	252 No Crossing		52 Crossing
 Test: 		690 No Crossing                   252 Crossing.
 It can be seen that the data  is quite imbalanced.
 # Models
-To study the effect of different types of input:
-Finetuned a Resnet101 on the last frame of each sequence by using the cropped 2x 224x224 image around the pedestrian.
-Finetuned a C3D network with the whole 16 frames by using the cropped 1.5x with 112x112
+To study the effect of different types of input i did the following:
+Finetuned a Resnet101 (pretrained on ImageNet) on the last frame of each sequence by using the cropped 2x 224x224 image around the pedestrian.
+Finetuned a C3D network (pretrained on Sports) 1Mwith the whole 16 frames by using the cropped 1.5x with 112x112
 Trained the same C3D network in combination with an LSTM passing speed as input to it. Specific details are in the code.
 The results are visible at the following link: https://wandb.ai/pamfil-1938844/CV?nw=nwuserpamfil1938844
 
