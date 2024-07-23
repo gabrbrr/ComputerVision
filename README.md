@@ -5,10 +5,9 @@ Pedestrian crossing intention estimation is an essential task for improving road
 # Dataset 
 Here i use the PIE Dataset, 6 hours of continuous 1080p footage recorded in Toronto, Canada in clear weather with annotations of, for what we’re concerned, pedestrian bounding boxes and vehicle speed.
 In particular we adopt the benchmark introduced by Kotseruba et al. where the observation sequences are 16 frames (0.5 seconds) taken in the range [76,46] before the TTE (pedestrian starts crossing) with an overlap of 0.6 in training to increase number of samples.
-After these steps, we’re left with the following dataset:\n
-Train: 		2315 No Crossing	           765 Crossing
-Validation: 	252 No Crossing		52 Crossing\n
-Test: 		690 No Crossing                   252 Crossing.\n
+After these steps, we’re left with the following dataset:      Train: 		2315 No Crossing	           765 Crossing
+Validation: 	252 No Crossing		52 Crossing
+Test: 		690 No Crossing                   252 Crossing.
 It can be seen that the data  is quite imbalanced.
 # Models
 To study the effect of different types of input i did the following:
