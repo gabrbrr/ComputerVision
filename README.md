@@ -13,7 +13,7 @@ It can be seen that the data  is quite imbalanced.
 To study the effect of different types of input i did the following:
 Finetuned a Resnet101 (pretrained on ImageNet) on the last frame of each sequence by using the cropped 2x 224x224 image around the pedestrian.
 Finetuned a C3D network (pretrained on Sports) 1Mwith the whole 16 frames by using the cropped 1.5x with 112x112
-Trained the same C3D network in combination with an LSTM passing speed as input to it. Specific details are in the code.
+Trained the same C3D network in combination with two LSTMs passing speed and bounding boxes as input. Specific details are in the code.
 The results are visible at the following link: https://wandb.ai/pamfil-1938844/CV?nw=nwuserpamfil1938844
 
 N.B.To preprocess the dataset which can be handled through the PIE data interface (https://github.com/aras62/PIE) i used some functions from the benchmark (https://github.com/ykotseruba/PedestrianActionBenchmark) , in particular for resizing and cropping and for computing overlapping frames.
